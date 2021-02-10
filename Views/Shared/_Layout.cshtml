@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Provo's Top Resturants</title>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+</head>
+<!-- Same as usuall except this time we added in some bootstrap using a link and then connect it with classes-->
+<body>
+    <header class="bg-dark text-white text-center">
+        <h1>@ViewBag.title</h1>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" asp-action="Index">Resturants</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li><a asp-action="Index">Home</a></li>
+                    <li><a asp-action="Suggest"> Suggest Resturant</a></li>
+                    <li><a asp-action="SuggestionList"> View Suggested Resturants</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    @RenderBody()
+</body>
+</html>

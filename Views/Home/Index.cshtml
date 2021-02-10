@@ -1,0 +1,18 @@
+﻿@{
+    ViewBag.title = "Home Page";
+}
+@model IEnumerable<string>
+
+<div class="text-center">
+    <h1 class="display-4">Top 5 Resturants</h1>
+</div>
+<br />
+<div>
+    <!-- List out the strings for each of the top 5 resturants-->
+    <ul class="list-group">
+        @foreach (string i in Model)
+        {
+            <li class="list-group-item">@i</li>
+        }
+    </ul>
+</div>
